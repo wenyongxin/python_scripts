@@ -14,3 +14,5 @@ baiwu.py
 
 用法：python baiwu.py  手机号  信息  xxxx
 
+
+欢迎各位技术人员共同交流： QQ号：576147914
