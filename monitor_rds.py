@@ -130,12 +130,6 @@ def get_network(abc, identifier):
 	return '%.2f' %(all[0] / 1024 ** 3)
 
 
-
-'''邮件通知'''
-def mail_to():
-	cmd = 'echo %s | '
-
-
 '''将数据主动发送发送给zabbix'''
 def send_active(datas):
 	for name,value in datas.items():
@@ -144,10 +138,8 @@ def send_active(datas):
 	        zabbix_active = os.popen(zabbix_active_cmd).read()
 		if zabbix_active:
 			print 0
-#			print key,value
 		else:
 			print 1
-
 
 def main():
 	if sys.argv[1] == 'json':
